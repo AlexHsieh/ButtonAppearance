@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ButtonAppearance_Example', :exclusive => true do
+  pod 'ButtonAppearance', :path => '../'
+end
+
+target 'ButtonAppearance_Tests', :exclusive => true do
+  pod 'ButtonAppearance', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
