@@ -1,0 +1,25 @@
+{
+  "name": "ButtonAppearance",
+  "version": "0.1.0",
+  "summary": "Use ButtonAppearance to setup Button appearance easily.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ButtonAppearance",
+  "license": "MIT",
+  "authors": {
+    "Alex Hsieh": "alex.hsieh@richi.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ButtonAppearance.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ButtonAppearance": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

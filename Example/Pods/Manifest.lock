@@ -1,0 +1,21 @@
+PODS:
+  - ButtonAppearance (0.1.0)
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - ButtonAppearance (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ButtonAppearance:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ButtonAppearance: 9d6adb47af0bc7a909fbd400d75b3da2e2f8b212
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+
+COCOAPODS: 0.39.0

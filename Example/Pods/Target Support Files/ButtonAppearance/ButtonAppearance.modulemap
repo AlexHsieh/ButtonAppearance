@@ -1,0 +1,6 @@
+framework module ButtonAppearance {
+  umbrella header "ButtonAppearance-umbrella.h"
+
+  export *
+  module * { export * }
+}

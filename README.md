@@ -9,6 +9,23 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+If you only need to change UIButton background color or background gradient  on different control state, use category UIbutton+Appearance. 
+
+
+
+
+If you need different border color or shadow color on different control state, subclass AHButton is required.
+
+![Button shadow changed with state][/image/1.gif]
+'[self.buttonFromStoryBoard setShadowColor:shadowColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateNormal];'
+'[self.buttonFromStoryBoard setShadowColor:buttonColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateHighlighted];'
+
+![Button border changed with state][/image/2.gif]
+'[self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];'
+'[self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor grayColor] forState:UIControlStateHighlighted];'
+
+
+
 ## Requirements
 
 ## Installation
@@ -22,7 +39,7 @@ pod "ButtonAppearance"
 
 ## Author
 
-Alex Hsieh, alex.hsieh@richi.com
+Alex Hsieh, alex.kyhsieh@gmail.com
 
 ## License
 
