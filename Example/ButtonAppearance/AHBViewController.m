@@ -35,7 +35,7 @@
     UIButton *button4 = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 280, 45)];
     [button4 setTitle:@"Button From Code" forState:UIControlStateNormal];
     [button4 setBackgroundGradient:@[[UIColor grayColor],[UIColor blackColor]] forState:UIControlStateNormal];
-    [button4 setBackgroundGradient:@[[UIColor lightGrayColor],[UIColor blackColor]] forState:UIControlStateNormal];
+    [button4 setBackgroundGradient:@[[UIColor lightGrayColor],[UIColor blackColor]] forState:UIControlStateHighlighted];
     [button4 setCornerRadius:6.0 borderWidth:1.0 borderColor:[UIColor blackColor]];
     [self.view4 addSubview:button4];
 
