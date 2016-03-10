@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
 Simple as setup UIButton title text, this helps user easy setup background color, gradient, shadow and border for different control state
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ButtonAppearance"
+  s.homepage         = "https://github.com/AlexHsieh/ButtonAppearance"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Alex Hsieh" => "alex.kyhsieh@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ButtonAppearance.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/AlexHsieh/ButtonAppearance.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
