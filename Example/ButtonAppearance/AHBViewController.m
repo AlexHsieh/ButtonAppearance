@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *view3;
 @property (weak, nonatomic) IBOutlet UIView *view4;
+@property (weak, nonatomic) IBOutlet UIView *view5;
 @end
 
 @implementation AHBViewController
@@ -38,6 +39,16 @@
     [button4 setBackgroundGradient:@[[UIColor lightGrayColor],[UIColor blackColor]] forState:UIControlStateHighlighted];
     [button4 setCornerRadius:6.0 borderWidth:1.0 borderColor:[UIColor blackColor]];
     [self.view4 addSubview:button4];
+    
+    UIColor *normalShadowColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1.0];
+    UIColor *highlightShadowColor = [UIColor colorWithRed:156/255.0 green:126/255.0 blue:66/255.0 alpha:1.0];
+    AHButton *button5 = [[AHButton alloc] initWithFrame:CGRectMake(0, 0, 280, 45)];
+    [button5 setTitle:@"Button" forState:UIControlStateNormal];
+    [button5 setShadowColor:normalShadowColor offset:CGSizeMake(0, 3.0) opacity:1.0 radius:0 forState:UIControlStateNormal];
+    [button5 setShadowColor:highlightShadowColor offset:CGSizeMake(0, 3.0) opacity:1.0 radius:0 forState:UIControlStateHighlighted];
+    [button5 setCornerRadius:5.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button5 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor brownColor] forState:UIControlStateHighlighted];
+    [self.view5 addSubview:button5];
 
 }
 
@@ -48,7 +59,7 @@
     [self.buttonFromStoryBoard setBackgroundColor:buttonColor forState:UIControlStateNormal];
     
     [self.buttonFromStoryBoard setShadowColor:shadowColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateNormal];
-    [self.buttonFromStoryBoard setShadowColor:buttonColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateHighlighted];
+    [self.buttonFromStoryBoard setShadowColor:buttonColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateHighlighted | UIControlStateSelected];
     
     
     [self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];

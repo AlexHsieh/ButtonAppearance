@@ -46,7 +46,18 @@
 - (void)saveAndSetBackgroundImage:(UIImage *)image forState:(UIControlState)state {
     if (image ) {
         NSMutableDictionary *dic = self.backgroundImageDictionary;
-        dic[@(state)] = image;
+        if (state == UIControlStateNormal) {
+            dic[@(UIControlStateNormal)] = image;
+        }
+        if (state & UIControlStateHighlighted) {
+            dic[@(UIControlStateHighlighted)] = image;
+        }
+        if (state & UIControlStateSelected) {
+            dic[@(UIControlStateSelected)] = image;
+        }
+        if (state & UIControlStateFocused) {
+            dic[@(UIControlStateFocused)] = image;
+        }
         self.backgroundImageDictionary = dic;
     }
     [self setBackgroundImageClippedToBounds:image forState:state];

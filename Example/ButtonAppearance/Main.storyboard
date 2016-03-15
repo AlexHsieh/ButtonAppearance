@@ -36,40 +36,39 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button border changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-rq-acC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button Border changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-rq-acC">
                                 <rect key="frame" x="20" y="122" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button background changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCp-Uq-2Wn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCp-Uq-2Wn">
                                 <rect key="frame" x="20" y="210" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button background Gradient changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6s-dD-mpb">
-                                <rect key="frame" x="20" y="308" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Gradient changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6s-dD-mpb">
+                                <rect key="frame" x="20" y="299" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bm0-LL-kBs">
-                                <rect key="frame" x="20" y="239" width="560" height="54"/>
+                                <rect key="frame" x="20" y="239" width="560" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="3hS-39-wiN"/>
+                                    <constraint firstAttribute="height" constant="45" id="3hS-39-wiN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-uB-kLd">
-                                <rect key="frame" x="20" y="342" width="560" height="54"/>
+                                <rect key="frame" x="20" y="333" width="560" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="Qr3-Uz-FPU"/>
-                                    <constraint firstAttribute="height" constant="54" id="dnq-RF-5yf"/>
+                                    <constraint firstAttribute="height" constant="45" id="dnq-RF-5yf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button shadow changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-wM-uXK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-wM-uXK">
                                 <rect key="frame" x="20" y="21" width="560" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HhU-Tj-M4B"/>
@@ -78,16 +77,33 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border and shadow changed with state:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-0x-dBy">
+                                <rect key="frame" x="20" y="395" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qof-xQ-y6r">
+                                <rect key="frame" x="20" y="424" width="560" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gtr-Za-GeE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mCp-Uq-2Wn" firstAttribute="top" secondItem="HoD-6R-Si2" secondAttribute="bottom" constant="14" id="0Ca-bd-viz"/>
                             <constraint firstItem="cXR-rq-acC" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="5Ha-Ii-Wga"/>
                             <constraint firstItem="mCp-Uq-2Wn" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="8RT-Uh-owq"/>
+                            <constraint firstItem="qof-xQ-y6r" firstAttribute="top" secondItem="PnV-0x-dBy" secondAttribute="bottom" constant="8" id="95z-K0-AjE"/>
+                            <constraint firstItem="qof-xQ-y6r" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="Bbb-bO-ipK"/>
                             <constraint firstItem="HoD-6R-Si2" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="DZj-r0-LdY"/>
+                            <constraint firstItem="PnV-0x-dBy" firstAttribute="top" secondItem="9Gd-uB-kLd" secondAttribute="bottom" constant="17" id="FFO-oc-CXH"/>
                             <constraint firstItem="Bm0-LL-kBs" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="HVR-2A-9xv"/>
                             <constraint firstItem="9Gd-uB-kLd" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="JRe-dj-67e"/>
                             <constraint firstItem="K6s-dD-mpb" firstAttribute="top" secondItem="Bm0-LL-kBs" secondAttribute="bottom" constant="15" id="K3F-y3-d1s"/>
+                            <constraint firstAttribute="trailing" secondItem="qof-xQ-y6r" secondAttribute="trailing" constant="20" id="K3d-OA-lnz"/>
                             <constraint firstItem="HoD-6R-Si2" firstAttribute="top" secondItem="cXR-rq-acC" secondAttribute="bottom" constant="8" id="Lfl-by-naK"/>
                             <constraint firstItem="12P-TZ-KeD" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="MXy-YL-BTG"/>
                             <constraint firstItem="cXR-rq-acC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="R3F-iA-CRw"/>
@@ -95,6 +111,8 @@
                             <constraint firstItem="ylR-wM-uXK" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="YAE-i0-rL2"/>
                             <constraint firstItem="ylR-wM-uXK" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="1" id="YLH-Q5-J2r"/>
                             <constraint firstItem="Bm0-LL-kBs" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="ZeJ-4f-7d9"/>
+                            <constraint firstItem="PnV-0x-dBy" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="bAU-AD-9II"/>
+                            <constraint firstAttribute="trailing" secondItem="PnV-0x-dBy" secondAttribute="trailing" constant="20" id="d13-tg-6QI"/>
                             <constraint firstItem="9Gd-uB-kLd" firstAttribute="top" secondItem="K6s-dD-mpb" secondAttribute="bottom" constant="13" id="djd-0M-Pn4"/>
                             <constraint firstItem="cXR-rq-acC" firstAttribute="top" secondItem="12P-TZ-KeD" secondAttribute="bottom" constant="27" id="eaq-Vd-xq4"/>
                             <constraint firstItem="ylR-wM-uXK" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="fy6-qy-ul0"/>
@@ -113,6 +131,7 @@
                         <outlet property="buttonFromStoryBoard2" destination="HoD-6R-Si2" id="J89-Sq-Gu3"/>
                         <outlet property="view3" destination="Bm0-LL-kBs" id="FBx-Nf-Iqt"/>
                         <outlet property="view4" destination="9Gd-uB-kLd" id="m1i-uh-HvC"/>
+                        <outlet property="view5" destination="qof-xQ-y6r" id="ctE-9o-zrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
