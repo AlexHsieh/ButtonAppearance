@@ -11,13 +11,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 If you need different border color or shadow color on different control state, subclass AHButton is required.
 
-![Button shadow changed with state](/image/1.gif)
+![Shadow changed with state](/image/1.gif)
 ````objective-C
 [self.buttonFromStoryBoard setShadowColor:shadowColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateNormal];
 [self.buttonFromStoryBoard setShadowColor:buttonColor  offset:CGSizeMake(0, 3.0) opacity:1.0 radius:1.0 forState:UIControlStateHighlighted];
 ````
 
-![Button border changed with state](/image/2.gif)
+![Border changed with state](/image/2.gif)
 ````objective-C
 [self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];
 [self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor grayColor] forState:UIControlStateHighlighted];
@@ -25,16 +25,25 @@ If you need different border color or shadow color on different control state, s
 
 If you only need to change UIButton background color or background gradient on different control state, use category UIbutton+Appearance. 
 
-![Button background color changed with state](/image/3.gif)
+![Background color changed with state](/image/3.gif)
 ````objective-C
 [button3 setBackgroundColor:[UIColor yellowColor] forState:UIControlStateNormal];
 [button3 setBackgroundColor:[UIColor greenColor] forState:UIControlStateHighlighted];
 ````
 
-![Button background gradient changed with state](/image/4.gif)
+![Background gradient changed with state](/image/4.gif)
 ````objective-C
 [button4 setBackgroundGradient:@[[UIColor grayColor],[UIColor blackColor]] forState:UIControlStateNormal];
 [button4 setBackgroundGradient:@[[UIColor lightGrayColor],[UIColor blackColor]] forState:UIControlStateHighlighted];
+````
+
+![Border and shadow changed with state:](/image/5.gif)
+````objective-C
+AHButton *button5 = [[AHButton alloc] initWithFrame:CGRectMake(0, 0, 280, 45)];
+[button5 setShadowColor:normalShadowColor offset:CGSizeMake(0, 3.0) opacity:1.0 radius:0 forState:UIControlStateNormal];
+[button5 setShadowColor:highlightShadowColor offset:CGSizeMake(0, 3.0) opacity:1.0 radius:0 forState:UIControlStateHighlighted];
+[button5 setCornerRadius:5.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];
+[button5 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor brownColor] forState:UIControlStateHighlighted];
 ````
 
 ## Requirements
