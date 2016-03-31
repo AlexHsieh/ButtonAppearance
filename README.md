@@ -7,7 +7,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 If you need different border color or shadow color on different control state, subclass AHButton is required.
 
@@ -22,6 +22,8 @@ If you need different border color or shadow color on different control state, s
 [self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];
 [self.buttonFromStoryBoard2 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor grayColor] forState:UIControlStateHighlighted];
 ````
+
+
 
 If you only need to change UIButton background color or background gradient on different control state, use category UIbutton+Appearance. 
 
@@ -45,6 +47,12 @@ AHButton *button5 = [[AHButton alloc] initWithFrame:CGRectMake(0, 0, 280, 45)];
 [button5 setCornerRadius:5.0 borderWidth:1.0 borderColor:[UIColor blackColor] forState:UIControlStateNormal];
 [button5 setCornerRadius:10.0 borderWidth:1.0 borderColor:[UIColor brownColor] forState:UIControlStateHighlighted];
 ````
+
+There are couple hint here if you can't find it work well.
+1. Use UIButtonTypeCustom
+2. If you use autolayout, archieved button size may not be the same as you see on the nib. It could be this reason to make button background not right. Try log it to see if the size is what you expected.
+
+
 
 ## Requirements
 ARC only; iOS 5.0+ / OSX 10.7+
